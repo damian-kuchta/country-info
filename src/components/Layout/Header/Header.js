@@ -1,6 +1,8 @@
+import classes from "./Header.module.css"
+
 const Header = (props) => {
     return ( 
-        <h1 >Country Info</h1>
+        <h1 className={classes.header} >Country Info</h1>
      );
 }
  

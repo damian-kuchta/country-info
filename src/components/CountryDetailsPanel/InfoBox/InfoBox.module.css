@@ -1,0 +1,41 @@
+.info-box {
+  display: flex;
+  font-size: 25px;
+  padding-bottom: 3px;
+}
+
+.info-box__label {
+  min-width: 40%;
+  margin-right: 15px;
+  text-align: right;
+}
+
+@media (max-width: 870px) {
+  .info-box {
+    font-size: 20px;
+  }
+
+  .info-box__label {
+    min-width: 40%;
+    margin-right: 15px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 720px) {
+  .info-box {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-box {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .info-box {
+    font-size: 16px;
+  }
+}

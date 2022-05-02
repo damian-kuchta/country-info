@@ -1,9 +1,10 @@
 .App {
   position: relative;
   min-height: 100vh;
-  max-width: 1600px;
+  /* max-width: 1800px; */
   margin: 0 auto;
   background-image: url("./assets/img/app-bg.jpeg");
   background-size: cover;
   background-position: center;
 }
+
