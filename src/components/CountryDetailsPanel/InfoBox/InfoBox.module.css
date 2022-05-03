@@ -1,7 +1,9 @@
 .info-box {
+  width: 100%;
   display: flex;
   font-size: 25px;
   padding-bottom: 3px;
+  overflow: hidden;
 }
 
 .info-box__label {

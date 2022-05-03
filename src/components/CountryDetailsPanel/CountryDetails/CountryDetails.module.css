@@ -12,10 +12,18 @@
   border-radius: 15px;
 }
 
+.info-boxes-wrap {
+  width: 100%;
+}
+
 @media (max-width: 870px) {
   .country-details {
     width: 80%;
     padding: 30px;
+  }
+
+  .info-boxes-wrap {
+    flex-basis: 50%;
   }
 }
 

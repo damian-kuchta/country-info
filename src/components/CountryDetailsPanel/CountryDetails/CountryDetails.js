@@ -13,7 +13,7 @@ const CountryDetails = (props) => {
   ) : (
     <section className={classes["country-details"]}>
       <FlagBox flagImg={ctx.selectedCountry.flag} />
-      <div>
+      <div className={classes['info-boxes-wrap']}>
         <InfoBox title="Country" value={ctx.selectedCountry.country} />
         <InfoBox title="Region" value={ctx.selectedCountry.region} />
         <InfoBox title="Capital" value={ctx.selectedCountry.capital} />
