@@ -1,6 +1,8 @@
 # Country Info :earth_africa:
 
-Check the basic informations about selected country.
+In progress... 
+
+Simple app to check the basic informations about selected country.
 
 ## Built With
 
