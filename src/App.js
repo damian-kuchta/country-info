@@ -6,11 +6,9 @@ import CountryDetails from "./components/CountryDetailsPanel/CountryDetails/Coun
 import AppContext from '../src/store/app-context'
 import { useEffect, useContext } from "react";
 
-
-
 function App() {
   const ctx = useContext(AppContext);
-  
+
   useEffect(() => {
     ctx.fetchCountries();
   }, []);
