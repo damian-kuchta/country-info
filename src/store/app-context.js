@@ -50,7 +50,7 @@ export const AppContextProvider = (props) => {
 
       if (response.ok) {
         const data = await response.json();
-
+      
         const density = ctxUtils.calculateDensity(data.population, data.area);
 
         const countryData = {
@@ -63,9 +63,10 @@ export const AppContextProvider = (props) => {
           currency: data.currencies[0].name,
           flag: data.flag
         };
+
         setLoaderVisibility(true);
-        setSelectedCountry(countryData);
         await wait(500);
+        setSelectedCountry(countryData);
         setLoaderVisibility(false)
         //pokaz panel
       } else {
