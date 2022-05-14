@@ -1,20 +1,29 @@
 import "./App.css";
+import getWindowHeight from './utils/getWindowHeight'
 import Header from "./components/Layout/Header/Header";
 import CountrySelect from "./components/CountrySelect/CountrySelect";
 import Footer from "./components/Layout/Footer/Footer";
 import CountryDetails from "./components/CountryDetailsPanel/CountryDetails/CountryDetails";
 import AppContext from '../src/store/app-context'
-import { useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 
 function App() {
+  const [appHeight, setAppHeight] = useState('');
   const ctx = useContext(AppContext);
+
+  useEffect(()=> {
+    setAppHeight(getWindowHeight());
+    window.addEventListener("resize", () => {
+      setAppHeight(getWindowHeight());
+    }, [appHeight]);
+  })
 
   useEffect(() => {
     ctx.fetchCountries();
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{height: appHeight}}>
       <Header />
       <main>
         <CountrySelect
